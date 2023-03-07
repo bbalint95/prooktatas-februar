@@ -1,0 +1,67 @@
+.feladat {
+    background-color: gray;
+    display:grid;
+    grid-template-columns: repeat(3, 20%);
+    grid-template-areas: 
+        "header header header header"
+        "navigation navigation navigation navigation"
+        "section section section sidebar"
+        "article article article sidebar"
+        "summary summary summary summary"
+        "footer footer footer footer";
+    text-align: center;
+    height: 500px;
+}
+
+.feladat div, .feladat header, .navigation, .feladat article, .feladat aside, .feladat footer, .summary, .feladat section {
+    padding: 15px;
+   /*  align-self: center;
+    justify-self: center; */
+}
+
+.header {
+    background-color: greenyellow;
+    grid-area: header;
+    /*  grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4; */
+}
+
+.navigation {
+    background-color: brown;
+    grid-area: navigation;
+    margin: 10px 0px 10px 0px;
+}
+
+.navigation a{
+    display: inline;
+    padding: 10px;
+}
+
+.section{
+    background-color: blue;
+    grid-area: section;
+}
+
+.article{
+    background-color: purple;
+    grid-area: article;
+}
+
+.aside{
+    background-color: aqua;
+    grid-area: sidebar;
+}
+
+.summary {
+    background-color: orange;
+    grid-area: summary;
+    margin-top: 10px;
+}
+
+footer{
+    background-color: brown;
+    grid-area: footer;
+    margin-top: 20px;
+}

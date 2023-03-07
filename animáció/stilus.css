@@ -1,0 +1,45 @@
+body{
+    background-image: url(tenger.jpg);
+    background-repeat: no-repeat;
+    background-size:cover; 
+    }
+
+.nap  {
+        position: relative;
+        animation: beuszas 7s linear infinite alternate;
+}
+
+
+.hajo {
+    position: relative;
+    animation: beuszas1 7s linear infinite alternate;
+    }
+    
+    @keyframes beuszas1 {
+        0% {left: 100px; top: 250px;}
+        10% {left: 200px; top: 300px;}
+        20% {left: 300px; top: 350px;}
+        30% {left: 400px; top: 300px;}
+        40% {left: 500px; top: 250px;}
+        50% {left: 600px; top: 300px;}
+        60% {left: 700px; top: 350px;}
+        70% {left: 800px; top: 300px;}
+        80% {left: 900px; top: 250px;}
+        90% {left: 1000px; top: 300px;}
+        100% {left: 1100px; top: 250px;}
+    }
+    
+
+    @keyframes beuszas {
+        0% {left: 100px; top: 250px;}
+        10% {left: 200px; top: 225px;}
+        20% {left: 300px; top: 200px;}
+        30% {left: 400px; top: 175px;}
+        40% {left: 500px; top: 150px;}
+        50% {left: 600px; top: 125px;}
+        60% {left: 700px; top: 150px;}
+        70% {left: 800px; top: 175px;}
+        80% {left: 900px; top: 200px;}
+        90% {left: 1000px; top: 225px;}
+        100% {left: 1100px; top: 250px;}
+    }

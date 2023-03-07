@@ -1,0 +1,49 @@
+.feladat {
+    background-color: white;
+    display:grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-areas: 
+        "header header header header"
+        "navigation content content content"
+        "footer footer footer footer";
+    text-align: center;
+    height: 800px;
+    border: 5px solid black;
+}
+
+.feladat header, .navigation {
+    padding: 15px;
+}
+
+.header {
+    background-color: greenyellow;
+    grid-area: header;
+    border: 5px solid black;
+    margin-bottom: 15px;
+   
+}
+
+.navigation {
+    background-color: yellow;
+    grid-area: navigation;
+    /* margin: 10px 0px 10px 0px; */
+    border: 5px solid black;
+}
+
+.navigation a{
+    display: block;
+    padding: 10px;
+}
+
+
+.content{
+    background-color: purple;
+    grid-area: content;
+    border: 5px solid black;
+}
+
+footer{
+    background-color: brown;
+    grid-area: footer;
+    border: 5px solid black;
+}

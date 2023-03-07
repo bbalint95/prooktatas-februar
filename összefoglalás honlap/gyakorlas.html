@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./összefoglalo.css">
+    <title>Összefoglalás</title>
+    <style>
+          
+    </style>
+</head>
+<body>
+    <a href="#lapalja">Ugrás az aljára</a>
+    <h4 id="lapteteje">Ez a teteje.</h4>
+    <h1>Főcímek</h1>
+    <p><b>A címeket h1-től h6-ig páros tagekkel lehet megjeleníteni. Ezek a méretet szabályozzák.</b></p>
+    <hr>
+    <h1>Paragrafusok</h1>
+    <p><b>p páros taggel lehet a bekezdéseket elkezdeni. hr a vízszintes vonal, ez páratlan tag. <br>br páratlan taggel lehet sort törni.Alt shift A-val lehet commentelni, amit nem jelenít meg a honlapon.</b></p>
+    <!-- comment -->
+    <hr>
+    <h1>Listák</h1>
+    <p><b>Listákat páros taggel kell elkezdeni.<br>
+     3 típusa van: <ul>
+        <li>számozott(ol köztük li páros tagek)</li>
+        <li>számozatlan(ul köztük li páros tagek)</li>
+        <li> definicíós(dl páros, köztük dt páros tag a definiálandó adat, dd páros tag a definíció).</li>
+        </ul></b></p>
+       <!-- számozott lista -->
+    <p><b>start-al megadhatjuk mennyitől induljon, value-val egyedi érték, és reverse-el csökkenő sorrendet állít fel.</b> </p>
+        <ol start="15" reversed>
+            <li>első elem</li>
+            <li>második elem</li>
+            <li>harmadik elem</li>
+        </ol>
+    
+        <!-- számozatlan lista -->
+
+        <ul>
+            <li>számozatlan első</li>
+            <li>számozatlan második</li>
+            <li>számozatlan harmadik</li>
+            <li>számozatlan negyedik</li>
+        </ul>
+
+        <!-- egymásba ágyazott -->
+        <ul>
+            <li>számozatlan első</li>
+            <li>számozatlan második</li>
+            <ol>
+                <li>első elem</li>
+                <li>második elem</li>
+                <ol>
+                    <li>szám 01</li>
+                    <li>szám 02</li>
+                </ol>    
+            </ol>
+            <li>számozatlan harmadik</li>
+            <li>számozatlan negyedik</li>
+        </ul>
+
+        <!-- definicíós lista -->
+        <dl>
+            <dt>HTML</dt>
+            <dd>legismertebb jelölőnyelv</dd>
+            <dt>CSS</dt>
+            <dd>stílusalapnyelv</dd>
+        </dl>
+        <dl>
+            <dt>A hét törpe</dt>
+            <dd>Kuka</dd>
+            <dd>Hapci</dd>
+            <dd>Morgó</dd>
+        </dl>
+        <hr>
+    <h1>Gyakorlás lista</h1>
+    <ol>
+        <li>kenyér</li>
+        <ol>
+            <li>fehér kenyér</li>
+            <li>barna kenyér</li>
+        </ol>
+        <li>tej</li>
+        <ol>
+            <li>zsíros tej</li>
+            <li>zsírszegény tej</li>
+        </ol>
+        <li>vaj</li>
+            <ol>
+            <li>sózott vaj</li>
+            <li>nem sózott vaj</li>
+            <li>margarin</li>
+            </ol>
+    </ol>
+    <ul>
+        <li>kenyér</li>
+        <ul>
+            <li>fehér kenyér</li>
+            <li>barna kenyér</li>
+        </ul>
+        <li>tej</li>
+        <ul>
+            <li>zsíros tej</li>
+            <li>zsírszegény tej</li>
+        </ul>
+        <li>vaj</li>
+            <ol>
+                <li>sózott vaj</li>
+                <li>nem sózott vaj</li>
+                <li>margarin</li>
+            </ol>
+    </ul>
+    <hr>
+    <!-- táblázatok -->
+    <h1>Táblázatok</h1>
+    <p><b>Táblázatok létrehozása: table páros tagekkel nyitjuk meg.<br>
+    sorok megnyitása tr páros tagek, oszlopok megnyitása td páros tagek<br>
+    caption páros tag-gel adhatunk a tábázatnak címet,th-val oszlop, vagy sor fejléc létrehozása<br>
+    colspan=x megadhatjuk hány oszlopot vonjon össze,rowspan=x hány sort vonjon össze</b></p>
+    <table border="collapse">
+        <caption>Első táblázatom</caption>
+        <tr>
+            <th>első sor első oszlop</th>
+            <td>1 sor 2 oszlop</td>
+            <td>1 sor 3 oszlop</td>
+        </tr>
+        <tr>
+            <th>2 sor 1 oszlop</th>
+            <td colspan="2">2 sor 2 oszlop és 2 sor 3 oszlop</td>
+           <!--  <td>2 sor 3 oszlop</td> -->
+        </tr>
+    </table>
+    <hr>
+        <table border="collapse">
+        <tr>
+            <th>Product</th>
+            <th>Flavors</th>
+        </tr>
+        <tr>
+                <td rowspan="3">Milk</td>
+                <td>Almond</td>
+        </tr>    
+        <tr>
+            <td>Mango</td>
+        </tr>
+        <tr>
+            <td>Chocolate</td>
+        </tr>
+        <tr>
+            <td colspan="2">These are exclusive flavors</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="collapse">
+        <caption>Time Table</caption>
+        <tr>
+            <th rowspan="7">Hours</th>
+        </tr>
+        <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <th colspan="5">Lunch</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+        </tr>
+    </table>
+    <hr>
+    <h2 id="#focim">Képek beszúrása</h2>
+    <div id="motor">
+        <p class="bekezdes">A kedvenc motorom
+            <img src="./yamaha.jpg" alt="motor" title="motor">
+            ez a típus.
+        </p>
+    </div>
+    <hr>
+    <h1>Videó beszúrása</h1>
+    <p><b>video src="könyvtár elérési útvonala,vagy internetes címe" width,height-> méret megadása, controls<br>
+    youtube video beszurása iframe width,height->méret megadása,src=link,title=cime.</b></p>
+    <video src="./video.mp4" height="400px" controls></video>
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=8l75Z8wil_U" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <hr>
+    <h1>Szövegformázás</h1>
+    <p><b>
+        abbr-> páros taggel pontozott aláhúzást érünk el,title-t hozzáadva megjeleníti a hozzáadott extre szöveget, i páros taggel dőlt betűtipus lesz, s páros taggel áthúzást érünk el, dfn páros taggel title-val definiciót adhathatunk hozzá a szövegrészhez,kurzorral megjeleníthetjük,mark páros taggel szöveget kiemelést érünk el, small páros taggel kicsinyitjük a szövegrészt.<br>
+        b páros taggel félkövérré változik a szöveg,ins páros taggel aláhúzunk, cite páros taggel dőlt lesz a szövegrész, q páros taggel idézőjelek közé tesszük a szövegrészt.
+        <br></b>
+        A <abbr title="Prooktatás">PRO</abbr>
+        a <i>mi képzőhelyüknk.</i>
+    </p>
+    <p>
+        Mai nap a <s>CSS</s> <dfn title="A HTML (angolul: HyperText Markup Language, ,,hiperszöveges jelölőnyelv˝) egy leíró nyelv, melyet weboldalak készítéséhez fejlesztettek ki, és mára már internetes szabvánnyá vált a W3C (world Wide Web Consortium) támogatásával.">HTML</dfn>
+        <mark>formázásokról</mark> <small>beszéltünk</small>
+    </p>
+    <p>
+        Az <b>egyik</b> legismertebb <ins>idézet</ins> <cite>Hamletből</cite> a <q>
+            Lenni vagy nem lenni.
+        </q>
+    </p>
+    <hr>
+    <p>
+        <h1>Csúszka létrehozása</h1>
+        <p class="bekezdes"><b>csuszka létrehzoása elöször mértékegység megadása meter(paros tag) min="0" max="x" value="y" title="y", title megjleníti az eredményt kurzorral.</b></p>
+        A távolugró első ugrása: <meter min="0" max="15" value="10" title="10"></meter>
+    </p>
+    <hr>
+    <h1>Indexelés</h1>
+    <b>sup páros taggel felső indexre emeljük, sub páros taggel alsó indexre rakjuk.</b><br>
+    5<sup>2</sup><br>
+    H<sub>2</sub>S0<sub>4</sub>
+    <hr>
+    <h1>Idézet másik forrásból</h1>
+    <b>blockquote páros tag egy idézet másik forrásból,középre igazítva,span páros taggel közötte lévő idézetet lehet formázni</b>
+    <p>
+    <blockquote id="lapalja">Lorem ipsum, dolor sit amet consectetur, <span>adipisicing elit.</span>  Tempora veritatis nulla neque. Ipsam numquam officiis, amet repudiandae quis fugiat vero architecto rem excepturi debitis dolor quae possimus iure recusandae placeat.</blockquote>
+    </p>
+    <hr>
+    <h1>Különböző típusú elemek(illusztráció,diagram,fotó,kódok,listák)</h1>
+    <b>figure páros elemmel egy adott típust kezdhetünk el, tartalmat,illusztrációt,diagramot,photot, kódok listázni,stb.
+    figcaption-nel címet adhatunk meg</b>
+    <figure>
+    <figcaption>Élelmiszerlista</figcaption>
+    <ol id="lista">
+        <li>kenyér</li>
+        <li>tej</li>
+        <li>vaj</li>
+    </ol>
+    </figure>
+    <hr>
+    <h1>Linkek beszurása,linkelés</h1>
+    <p><b>a href=#-el megjelöljük, hogy melyik id-ra ugorjon a lap,id-val párosítjuk a linket<br>
+    képhez rendelt link->elöször a href="link beszúrása",target="_blank"->új lap megnyitása, utána a kép beszúrása img src="célkönyvtár"<br>
+    a href="mailto:email cím" utána kiirva a páros tag közé az email címet->azonnali mail kapcsolat felvétel<br>
+    a href="tel:+36704114605" utána kiirva a páros tag közé a telefonszám,vagy szöveg->azonnali telefonkapcsolat felvétel</b></p>
+    <div id="arnyekdoboz">
+    <a id="rendez" href="mailto:xyz@gmail.com">xyz@gmail.com</a><br>
+    <a id="rendez" href="tel:+3630123456">Hívj fel</a><br>
+    </div>
+    <br>
+    <a href="#lapteteje">Ugrás a lap tetejére</a><br>
+    <a href="https://www.yamaha-motor.eu/hu/hu/" target="_blank">
+    <img src="./yamaha.jpg" alt="motor" title="motor"></a>
+    <hr>
+    <h1>CSS fájlok, avagy stylesheet</h1>
+    head részben link rel="stylesheet" href="./css fájl célkönyvtár elérése"<br>
+    CSS fájlon belül:
+    <ul> <b>
+        <li>h1,h2 {közé a tulajdonságok beírása}</li>
+        <li>#egyedi azonosító {közé a tulajdonságok beírása}</li>
+        <li>#egyedi azonosítón belül p bekezdésekre való hivatkozás {közé a tulajdonságok beírása}</li>
+        <li>.csoport/class-ra való hivatkozás{közé a tulajdonságok beírása}</li>
+        <li>a:link,a:visited,a:hoover: ezekkel a linkekre tudunk tulajdonságokat kiszabni{közé a tulajdonságok beírása}</li>
+        <li>#id {text-shadow: vísszintes,függőleges,életlenités,szín}</li>
+        <li>#id {text-decoration:underline,text-decoration-style:wavy,text-decoration-color:brown,text-indent:35px,}</li>
+        <li>#id->listára is lehet tulajdonságokat adni { list-style-type:},{list-style-image:url(./célkonyvtár)}</li>
+        <li>#id {border-style:solid->folyamatos keret,dotted->pontozott,double->dupla,border-width:10px;border-color:aqua;border-radius: 15px->keret lekerekítése;}</li>
+        <li>body{width:százalékban megadva;margin:auto;background-image:url(./célkönyvtár);background-repeat:no-repeat/repeat-x/-y;background-size:cover;background-attachment:fixed/scrolled;</li>
+        <li>listák szerkesztése ul/ol {background-image: linear-gradient(egyenes arányos): from left/top to right/bottom,white,black;red(75%),white,green;százalékokban is megadható;}</li>
+        <li>ul {background-image: radial-gradient(körkörös színátmenet)(yellow,green);}</li>
+        <li>hosszabb szövegek tördelése: #egyedi azonosító {column-count: 3;column-gap: 30px;}</li>
+        </b>
+    </ul>
+
+    <hr>
+    <p id="arnyek1">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Tempora veritatis nulla neque. Ipsam numquam officiis, amet repudiandae quis fugiat vero architecto rem excepturi debitis dolor quae possimus iure recusandae placeat.</p><br>
+    <p id="behuzas"> Az egyik legismertebb idézet Hamletből a Lenni vagy nem lenni.</p>
+    <hr>
+    <h1>Táblázatok szerkesztése</h1>
+    <ul><b>
+        <li>table, th, td, tr{border: 1px solid black-táblázat kereteinek tulajdonsága; border-collapse: collapse;seperate;->egybe vannak a cellák,vagy külön;}</li>
+        <li>table {table-layout: fixed; widht,height:200px;<-táblázat rögzítése,szélessége,hosszusága;caption-side:top,bottom;<-cimének elhelyezése;}</li>
+        <li>tabel {border-spacing:30px;<-cellék közti különbség}</li>
+        <li></li>
+    </b></ul>
+</body>
+
+</html>

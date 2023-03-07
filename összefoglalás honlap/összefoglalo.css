@@ -1,0 +1,93 @@
+body {
+    width: 80%;
+    margin: auto;
+ /*    background-image: url(./tenger.jpg); */
+    background-repeat: no-repeat;
+    background-color: rgb(127, 255, 212);
+}
+
+h1 {
+    color: red;
+}
+
+h1, h2 {
+    background-color: yellowgreen;
+    border: 5px solid black;
+}
+
+#focim {
+    font-weight: 800;
+}
+
+#motor p {
+    background-color: blueviolet;
+}
+
+.bekezdes {
+    font-style: italic;
+}
+
+a:link {
+    color: brown;
+}
+
+a:visited {
+    color:red;
+}
+
+a:hover {
+    background-color: black;
+    color:aliceblue;
+}
+
+#behuzas {
+    text-indent: 35px;
+    text-decoration: underline;
+    text-decoration-color: brown;
+    text-decoration-style: wavy;
+    border-style: solid;
+    border-color: orangered;
+    border-width: 10px;
+    border-radius: 15px;
+}
+
+#arnyek1 {
+    text-shadow: 5px 5px 2px red;
+}
+
+#lista {
+    list-style-image: url(./cd.png);
+}
+
+#rendez {
+    display: inline;
+}
+
+#arnyekdoboz {
+    box-shadow: 5px 5px 10px 2px blue;
+}
+
+table, th, td, tr {
+    border: 4px solid red;
+    border-collapse: separate;
+}
+
+table {
+    table-layout: fixed;
+    width: 600px;
+    border-spacing: 30px;
+    background-image: radial-gradient(yellow, green, purple);
+}
+
+ol {
+    background-image: linear-gradient(red,white,green);
+}
+
+ul {
+    background-image: radial-gradient(farthest-corner at 50% 50%,red,yellow,green);
+}
+
+#lapalja {
+    column-count: 3;
+    column-gap: 30px;
+}

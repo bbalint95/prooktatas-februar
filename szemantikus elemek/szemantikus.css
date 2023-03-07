@@ -1,0 +1,47 @@
+body {
+    width: 70%;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(223, 149, 223);
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(201, 198, 198);
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    
+}
+
+li{
+    display: inline-block;
+    padding: 10px;
+}
+
+article{
+    background-color: aqua;
+}
+
+section{
+    background-color: blueviolet;
+}
+
+aside{
+    background-color: greenyellow;
+}
+
+.bal{
+    float: left;
+    width: 60%;
+}
+
+
+footer {
+    background-color: yellow;
+    clear: left;
+}

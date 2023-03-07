@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ellipszis</title>
+</head>
+<body>
+    <svg width="500" height="350">
+        <ellipse cx="100" cy="180" rx="100" ry="20" style="fill: rgb(124, 4, 74);" />
+        <ellipse cx="90" cy="160" rx="80" ry="15" style="fill: rgb(17, 190, 2);" />
+        <ellipse cx="80" cy="140" rx="60" ry="10" style="fill: rgb(200, 255, 0)" />
+    </svg>
+<hr>
+    <svg width="500" height="500">
+        <polygon points="250,20 400,480 20,200 480,200 100,480" style="fill:lime; stroke:purple; stroke-width:5px;"/>
+    </svg>
+<hr>
+    <svg width="500" height="200">
+        <defs>
+            <linearGradient id="atmenet" x1="0%" y1="0%" x2="50%" y2="0%">
+                <stop offset="0%" style="stop-color: red;" />
+                <stop offset="70%" style="stop-color: lime;" />
+                <stop offset="100" style="stop-color: blue;" />
+            </linearGradient>
+        </defs>
+        <ellipse cx="250" cy="80" rx="70" ry="30" fill="url(#atmenet)" />
+    </svg>
+<hr>
+      
+<svg width="800" height="400">
+    <defs>
+        <linearGradient id="atmenet1" x1="0%" y1="0%" x2="75%" y2="0%">
+            <stop offset="0%" style="stop-color: orange;" />
+            <stop offset="70%" style="stop-color: purple;" />
+            <stop offset="100" style="stop-color: aqua;" />
+        </linearGradient>
+    </defs>  
+    <polygon points="150,75 258,137 258,262 150,325 42,262 42,137"
+      stroke="lime" stroke-width="3" fill="url(#atmenet1)"></polygon>
+</svg>
+<hr>
+</body>
+</html>

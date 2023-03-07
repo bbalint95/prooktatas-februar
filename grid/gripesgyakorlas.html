@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Grid</title>
+        <style>
+            .container {
+                background-color: gray;
+                display:grid;
+                grid-template-columns: no-repeat(3, 20%);
+                grid-template-areas: 
+                    "header header header"
+                    "link link link"
+                    "section section bar"
+                    "atricle article bar"
+                    "summ summ summ"
+                    "footer footer footer";
+                text-align: center;
+                color: white;
+            }
+            
+            .container div {
+                padding: 15px;
+               /*  align-self: center;
+                justify-self: center; */
+            }
+
+            .elso {
+                background-color: greenyellow;
+                grid-area: header;
+            }
+
+            .masodik {
+                background-color: brown;
+                grid-template-areas: link;
+            }
+
+            .harmadik{
+                background-color: blue;
+                grid-area: right;
+            }
+
+            .negyedik{
+                background-color: blueviolet;
+                grid-area: left;
+            }
+
+            .otodik{
+                background-color: aqua;
+                
+            }
+
+            .hatodik {
+                background-color: orange;
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 6;
+                grid-row-end: 6;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="elso">Header Section</div>
+            <div class="masodik">Navigation Link1 Navigation Link 2 Navigation Link 3</div>
+            <div class="harmadik">Section Part</div>
+            <div class="negyedik">Article Part</div>
+            <div class="otodik">Sidebar Part</div>
+            <div class="hatodik">Footer Section</div>
+            
+    </body>
+</html>

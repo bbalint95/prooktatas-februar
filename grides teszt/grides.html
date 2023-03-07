@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Grid</title>
+        <style>
+            .container {
+                background-color: gray;
+                display:grid;
+                grid-template-columns: repeat(4, 20%);
+                grid-template-areas: 
+                    "header header header header"
+                    "left main main main"
+                    "left right right right"
+                    "footer footer footer footer";
+                column-gap: 25px;
+                row-gap: 15px;
+                height: 400px;
+                margin: 5px;
+                justify-content: center;
+                align-content: center;
+            }
+            
+            .container div {
+                padding: 15px;
+               /*  align-self: center;
+                justify-self: center; */
+            }
+
+            .elso {
+                background-color: greenyellow;
+                grid-area: header;
+                /*  grid-column-start: 2;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 4; */
+            }
+
+            .masodik {
+                background-color: brown;
+                grid-area: left;
+            }
+
+            .harmadik{
+                background-color: blue;
+                grid-area: right;
+            }
+
+            .negyedik{
+                background-color: blueviolet;
+                grid-area: left;
+            }
+
+            .otodik{
+                background-color: aqua;
+                grid-area: footer;
+            }
+
+            .hatodik {
+                background-color: orange;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="elso">első</div>
+            <div class="masodik">masodik</div>
+            <div class="harmadik">harmadik</div>
+            <div class="negyedik">negyedik</div>
+            <div class="otodik">ötödik</div>
+            <div class="hatodik">hatodik</div>
+            
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS grid</title>
+<style>
+    .container-grid div {
+      padding: 20px;
+    }
+    .container-grid {
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20%;
+      grid-template-areas:
+        "header header header header"
+        "main-left main-left main-right main-right"
+        "second-left second-left second-left second-right"
+        "footer footer footer footer";
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      height: 500px;
+      margin: 20px;
+      justify-content: center;
+      align-content: center;
+    }
+    .el1 {
+      background: rgba(255, 154, 72, 0.5);
+      grid-area: header;
+    }
+    .el2 {
+      background: rgba(255, 0, 0, 0.5);
+      grid-area: main-left;
+    }
+    .el3 {
+      background: rgba(0, 128, 0, 0.5);
+      grid-area: main-right;
+    }
+    .el4 {
+      background: rgba(0, 4, 255, 0.5);
+      grid-area: second-left;
+    }
+    .el5 {
+      background: rgba(0, 100, 255, 0.5);
+      grid-area: second-right;
+    }
+    .el6 {
+      background: rgba(0, 4, 100, 0.5);
+      grid-area: footer;
+    }
+  </style>
+  <div class="container-grid">
+    <div class="el1">Elem 1</div>
+    <div class="el2">Elem 2</div>
+    <div class="el3">Elem 3</div>
+    <div class="el4">Elem 4</div>
+    <div class="el5">Elem 5</div>
+    <div class="el6">Elem 6</div>
+  </div>
